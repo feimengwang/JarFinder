@@ -44,7 +44,7 @@ public class FindJar implements Runnable {
 			e.printStackTrace();
 		}
 		es.shutdown();
-		vector.addElement("æ£€ç´¢ç»“æ�Ÿã€‚");
+		vector.addElement("Finished");
 		if (callBack != null) {
 			callBack.callBack(vector);
 			callBack.finish();
@@ -54,7 +54,7 @@ public class FindJar implements Runnable {
 	public static void main(String[] args) {
 		CountDownLatch lcd = new CountDownLatch(10);
 		FindJar tttt = new FindJar();
-		tttt.findJar(new File("C:\\workspace\\master_current"));
+		tttt.findJar(new File(""));
 		ExecutorService es = Executors.newFixedThreadPool(10);
 
 		for (int i = 0; i < 10; i++) {

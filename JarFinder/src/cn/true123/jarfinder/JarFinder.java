@@ -130,7 +130,7 @@ public class JarFinder {
 
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						vector.set(0, nextString("检索中"));
+						vector.set(0, nextString("Searching"));
 						list.setListData(vector);
 
 					}
@@ -148,7 +148,7 @@ public class JarFinder {
 							list.setListData(v);
 						} else {
 							Vector<String> vector = new Vector<String>();
-							vector.addElement("Sorry, 没有找到！");
+							vector.addElement("Sorry, not found！");
 							list.setListData(vector);
 						}
 
